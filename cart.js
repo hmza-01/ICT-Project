@@ -2,7 +2,6 @@ import { products } from "./productsData.js";
 export class Cart{
   cartItems;
   constructor(key){
-    console.log("entered constructor");
     this.Storagekey=key;
     this.loadfromStorage();
   }
