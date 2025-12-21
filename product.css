@@ -452,5 +452,40 @@ footer {
     margin-top: 10px;
     color: #bbb;
 }
+.toast{
+    z-index: 10;
+    display: flex;
+    width:310px;
+    height:47px;
+    background-color:var(--primary);
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    border-radius: 5px;
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    left:40%;
+  }
+  .tick-container{
+    width:27px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .tick-img{
+    width: 100%;
+    border-radius:100%;
+  }
+  .tick-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+  }
+  .toast.visible{
+  visibility: visible;
+  }
+  
 
 

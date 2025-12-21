@@ -20,16 +20,24 @@ function display(){
   })
   document.querySelector(".products-grid").innerHTML=accumulator;
 }
-function animation(){
-}
 function eventDelegator(){
   document.addEventListener("click",(el)=>{
     if(el.target.classList.contains("cart-btn")){
       const productId=el.target.dataset.productId;
       cart.AddtoCart(productId,1);
-      console.log(cart.cartItems)
+      let timeout;
+      animation(document.querySelector(".toast"),timeout);
     }
   })
+}
+function animation(el,timeout){
+  if(timeout){
+    clearTimeout(timeout);
+  }
+  el.classList.add("visible");
+  timeout=setTimeout(()=>{
+    el.classList.remove("visible")
+  },3000)
 }
 display();
 eventDelegator();
