@@ -20,6 +20,10 @@ cart.cartItems.forEach((el)=> {
 document.querySelector(".cart-items-container").innerHTML=accumulator;
 }
 function moneyCalc(){
-
+  let Total = 0;
+  cart.cartItems.forEach((el) => {
+    Total += el.price * el.quantity;
+  });
 }
 cartSummary();
+moneyCalc();
