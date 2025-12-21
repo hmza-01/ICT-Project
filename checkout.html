@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlSadiq - Checkout</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="./checkout.css">   
+</head>
+<body>
+
+<section class="header-1">
+    <nav>
+        <a href="index.html"><img src="./AlSadiq/logo.png" alt="Logo"></a>
+        <div class="nav-links">
+            <ul>            
+                <li> <a href="index.html">HOME</a></li>  
+                <li> <a href="product.html">Shop Retail</a></li> 
+                <li> <a href="aboutus.html">ABOUT US</a></li>
+                <li> <a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="checkout-section">
+        <div class="container">
+            <h2 class="section-title">Checkout</h2>
+            <div class="checkout-layout">
+                <div class="cart-items-section">
+                    <h3 class="section-subtitle">Your Cart Items:</h3>
+                    <div class="cart-items-container">
+
+                       
+
+
+
+
+                    </div>
+                    
+                </div>
+                <div class="checkout-summary-section">
+                    <h3 class="section-subtitle">Order Summary</h3>
+                    <div class="summary-card">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span class="summary-value" id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping:</span>
+                            <span class="summary-value" id="shipping">$5.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax:</span>
+                            <span class="summary-value" id="tax">$0.00</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-row total-row">
+                            <span>Total:</span>
+                            <span class="summary-value total-value" id="total">$0.00</span>
+                        </div>
+                        <button class="buy-btn" id="buy-button">Proceed to Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<script type="module" src="./checkout.js"></script>
+</body>
+</html>
+

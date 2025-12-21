@@ -1,9 +1,8 @@
 import { products } from "./productsData.js";
-import { Cart } from "./cart.js";
-let cart=new Cart("cart");
+import { cart } from "./cart.js";
 function display(){
   let accumulator=``;
-  cart.cartItems.forEach((el)=>{
+  products.forEach((el)=>{
     accumulator+=`<div class="product-card">
     <div class="product-img">
         <img class="img" src=${el.url}>

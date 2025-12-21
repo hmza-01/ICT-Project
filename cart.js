@@ -1,11 +1,12 @@
 import { products } from "./productsData.js";
-export class Cart{
+ class Cart{
   cartItems;
   constructor(key){
     this.Storagekey=key;
     this.loadfromStorage();
   }
 AddtoCart(productId,quantity){
+  console.log(productId);
   let matchingItem;
   this.cartItems.forEach((item)=>{
     if(item.id===productId){
@@ -17,14 +18,28 @@ AddtoCart(productId,quantity){
     this.toStorage();
   }
   else{
-    this.cartItems.push(matchingItem);
+    products.forEach((el)=>{
+      if(el.id===productId){
+        this.cartItems.push(el);
+        this.toStorage();
+      }
+    })
+
   }
 
 }
 loadfromStorage(){
-  this.cartItems=JSON.parse(localStorage.getItem(this.Storagekey));
+  this.cartItems=JSON.parse(localStorage.getItem(this.Storagekey))
   if(!this.cartItems){
-    this.cartItems=(products);
+    this.cartItems=[]
+    this.cartItems.push({
+      price:12,
+      id:"qwertyui123",
+      quantity:1,
+      name:"Pure Cane Jaggery",
+      url:"./AlSadiq/gurr.jpg",
+      description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
+    });
     this.toStorage();
   }
 }
@@ -42,3 +57,4 @@ toStorage(){
   localStorage.setItem(this.Storagekey,JSON.stringify(this.cartItems));
 }
 }
+export let cart=new Cart("cart");
