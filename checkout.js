@@ -20,6 +20,32 @@ cart.cartItems.forEach((el)=> {
 document.querySelector(".cart-items-container").innerHTML=accumulator;
 }
 function moneyCalc(){
+let totalPrice=0;
+cart.cartItems.forEach((el)=>{
+  totalPrice+=el.price*el.quantity;
+})
+document.querySelector("#subtotal").innerHTML=`$${totalPrice.toFixed(2)}`
+let tax=0.05*totalPrice;
+document.querySelector("#tax").innerHTML=`$${tax.toFixed(2)}`
+let finalprice=totalPrice+tax;
+if(!cart.cartItems.length){
+  document.querySelector("#total").innerHTML=`$${finalprice.toFixed(2)}`
+}
+else{
+  finalprice+=5;
+  document.querySelector("#total").innerHTML=`$${finalprice.toFixed(2)}`
+}
 
 }
+function eventDelegator(){
+  document.addEventListener("click",(el)=>{
+    if(el.target.classList.contains("buy-btn")){
+      cart.cartItems=[];
+      cart.toStorage();
+      cartSummary();
+    }
+  })
+}
 cartSummary();
+moneyCalc();
+eventDelegator();
