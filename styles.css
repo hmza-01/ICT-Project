@@ -15,7 +15,7 @@
 .header {
     width: 100%;
     min-height: 80vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('eduford_img/banner.png');
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('AlSadiq/banner.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -190,7 +190,7 @@ width: 100%;
 .cta{
      width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('eduford_img/banner3.jpg');
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('AlSadiq/banner3.jpg');
     background-position: center;
     background-size: cover;
     position: center;
@@ -240,7 +240,7 @@ width: 100%;
 .header-1{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('eduford_img/back.jpg');
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('AlSadiq/back.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -394,7 +394,7 @@ width: 100%;
     padding: 0;
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('eduford_img/banner.jpg');
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('AlSadiq/banner.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
