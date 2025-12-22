@@ -6,13 +6,14 @@ import { products } from "./productsData.js";
     this.loadfromStorage();
   }
 AddtoCart(productId,quantity){
-  console.log(productId);
   let matchingItem;
+  if(this.cartItems){
   this.cartItems.forEach((item)=>{
     if(item.id===productId){
       matchingItem=item;
     }
   })
+}
   if(matchingItem){
     matchingItem.quantity+=quantity;
     this.toStorage();
@@ -29,7 +30,7 @@ AddtoCart(productId,quantity){
 
 }
 loadfromStorage(){
-  this.cartItems=JSON.parse(localStorage.getItem(this.Storagekey));
+  this.cartItems=JSON.parse(localStorage.getItem(this.Storagekey))||[];
 }
 //temporarily commented
 // deleteItem(productId){

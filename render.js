@@ -22,6 +22,7 @@ function display(){
 function eventDelegator(){
   document.addEventListener("click",(el)=>{
     if(el.target.classList.contains("cart-btn")){
+      console.log("entered add to cart")
       const productId=el.target.dataset.productId;
       cart.AddtoCart(productId,1);
       let timeout;

@@ -158,3 +158,80 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
 }
+.receipt{
+    position: fixed;
+    top:10%;
+    left:50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    height:80vh;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    width:250px;
+    transform:translateX(-50%);
+  }
+  .top-section-receipt{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+  }
+  .img-tick-container{
+    width:34px;
+    border-radius: 100%;
+  }
+  .image-tick{
+    width:100%;
+    border-radius: 100%;
+  }
+  .txt-receipt{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: palevioletred;
+  }
+  .middle-section-receipt{
+    border-top: 1px dashed black;
+    display: flex;
+    flex-direction: column;
+    flex:3;
+  }
+  .pr{
+    color:rgb(99, 93, 93);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:6px 0 0 6px;
+  }
+  .pr.ship{
+    padding-bottom: 6px;
+  }
+  .fpr{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:6px 0 0 6px;
+    border-top:1px dashed black;
+  }
+  .bottom-section-receipt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:3px;
+  }
+  .btn-close{
+    width:140px;
+    padding:6px;
+    background-color: rgb(212, 22, 22);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .btn-close:hover{
+    cursor:pointer;
+  }

@@ -1,6 +1,7 @@
 import { cart } from "./cart.js";
 function cartSummary(){
 let accumulator=``
+if(cart.cartItems){
 cart.cartItems.forEach((el)=> {
   accumulator+=`
     <div class="product-card">
@@ -19,10 +20,13 @@ cart.cartItems.forEach((el)=> {
 })
 document.querySelector(".cart-items-container").innerHTML=accumulator;
 }
+}
 function moneyCalc(){
 let totalPrice=0;
+let quantity=0;
 cart.cartItems.forEach((el)=>{
   totalPrice+=el.price*el.quantity;
+  quantity+=el.quantity;
 })
 document.querySelector("#subtotal").innerHTML=`$${totalPrice.toFixed(2)}`
 let tax=0.05*totalPrice;
@@ -35,17 +39,46 @@ else{
   finalprice+=5;
   document.querySelector("#total").innerHTML=`$${finalprice.toFixed(2)}`
 }
-
+return {totalPrice,tax,finalprice,quantity};
 }
 function eventDelegator(){
   document.addEventListener("click",(el)=>{
-    if(el.target.classList.contains("buy-btn")){
+    if(el.target.classList.contains("buy-btn")){ 
       cart.cartItems=[];
       cart.toStorage();
       cartSummary();
+      if(data.totalPrice>0){
+      document.querySelector(".checkout-section").innerHTML=``;
+      document.querySelector(".checkout-section").innerHTML=`<div class="receipt">
+      <div class="top-section-receipt">
+        <div class="img-tick-container">
+          <img class="image-tick" src="./AlSadiq/tick.png">
+        </div>
+        <div class="txt-receipt">Order Summary</div>
+      </div>
+      <div class="middle-section-receipt">
+        <div class="pr">Price:$${data.totalPrice.toFixed(2)}</div>
+        <div class="pr">Tax:$${data.tax.toFixed(2)}</div>
+        <div class="pr ship">Shipping:$5.00</div>
+        <div class="fpr">Total:$${data.finalprice.toFixed(2)}</div>
+        <div class="pr">Total Items:${data.quantity}</div>
+        <div class="pr ship">Dispatched By: AlSadiq Co.&copy;</div>
+        <div class="fpr">Dispatch Id:${Date.now()}</div>
+      </div>
+      <div class="bottom-section-receipt">
+        <div>
+          <img src="./AlSadiq/dispatch.jpeg">
+        </div>
+        <button class="btn-close">Close</button>
+      </div>
+      </div>`
+      }
+    }
+    if(el.target.classList.contains("btn-close")){
+      window.location.href="./product.html"
     }
   })
 }
 cartSummary();
-moneyCalc();
+let data=moneyCalc();
 eventDelegator();
