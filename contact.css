@@ -1,0 +1,45 @@
+ :root {
+            --primary: #8B4513; /* Rich brown */
+            --secondary: #D2691E; /* Chocolate */
+            --accent: #FFD700; /* Gold */
+            --light: #FFF8DC; /* Cornsilk */
+            --dark: #5D2906;
+            --gray: #333;
+            --light-gray: #f5f5f5;
+            --reddish: #f44236;
+}
+.box  {
+  width: 100%;
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.contact-info {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+.contacts-grid {
+display: grid;
+gap:50px;
+}
+
+.contacts-card {
+background: white;
+padding: 30px;
+border-radius: 8px;
+text-align: center;
+box-shadow 0 5px 15px rgba(0,0,0,0.05);
+transition: transform 0.3s;
+}
+.contacts-card:hover  {
+ transform: translateY(-10px); 
+}
+/* container class ka duplicate add kia */,
+.behenchod {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+}
+
+
