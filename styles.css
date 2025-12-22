@@ -679,14 +679,17 @@ padding: 0px 30px 0px 30px;
             color: white;
         }
         
-        .business-img {
+        .one-img {
             background-color: var(--primary);
         }
         
-        .home-img {
+        .two-img {
+            background-color: var(--dark);
+        }
+        .three-img {
             background-color: var(--secondary);
         }
-        
+
         .audience-content {
             padding: 30px;
             text-align: center;
