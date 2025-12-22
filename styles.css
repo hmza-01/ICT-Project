@@ -91,15 +91,15 @@ width: 100%;
 .perks{
     margin-top: 20px;
     margin-bottom: 20px;
-    width:90%;
+    width:100%;
     position:static;
     top:50%;
     left:7%;
     transform:-translate(-50%,-50%);
-    text-align: left;
-    margin-left: auto;
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .perks h1{
     font-size:30px;
@@ -121,10 +121,11 @@ width: 100%;
     background: transparent;
     position:relative;
     cursor:pointer;
+    transition: background-color 1300ms,transform 1300ms;
 }
 .hero-btn:hover{
-  background-color: #0056b3; /* New background color on hover */
-  transform: translateY(-2px);  
+  background-color: #0056b3;
+    transform: scale(1.090);
 }
 
 
@@ -420,6 +421,9 @@ width: 100%;
 #chat-log p {
   margin: 6px 0;
 }
+.section-title.left-container-section{
+    margin-bottom:0;
+}
  .container {
             width: 100%;
             max-width: 1200px;
@@ -564,7 +568,7 @@ width: 100%;
 .form-container {
  max-width: 800px;
  margin: 0 auto;
- backgroud: var(--light);
+ background: var(--light);
  padding: 50px;
  border-radius: 8px;
  box-shadow: 0 10px 30px rgba(0,0,0,0,1); 

@@ -48,8 +48,8 @@ function eventDelegator(){
       cart.toStorage();
       cartSummary();
       if(data.totalPrice>0){
-      document.querySelector(".checkout-section").innerHTML=``;
-      document.querySelector(".checkout-section").innerHTML=`<div class="receipt">
+      document.querySelector(".cart-items-section").innerHTML=``;
+      document.querySelector(".cart-items-section").innerHTML=`<div class="receipt">
       <div class="top-section-receipt">
         <div class="img-tick-container">
           <img class="image-tick" src="./AlSadiq/tick.png">
