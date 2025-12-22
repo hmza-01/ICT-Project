@@ -1,7 +1,7 @@
 import { cart } from "./cart.js";
 function cartSummary(){
 let accumulator=``
-if(cart.cartItems){
+if(cart.cartItems.length>0){
 cart.cartItems.forEach((el)=> {
   accumulator+=`
     <div class="product-card">
@@ -19,6 +19,14 @@ cart.cartItems.forEach((el)=> {
     </div>`
 })
 document.querySelector(".cart-items-container").innerHTML=accumulator;
+}
+else{
+  document.querySelector(".cart-items-container").innerHTML=`<div class="oops-unit">
+  <div class="oops-container">
+    <img class="oops"src="./AlSadiq/emptyimages.png">
+  </div>
+  <div class="oops-text">Your Cart Seems empty....</div>
+</div>`
 }
 }
 function moneyCalc(){
@@ -49,7 +57,9 @@ function eventDelegator(){
       cartSummary();
       if(data.totalPrice>0){
       document.querySelector(".cart-items-section").innerHTML=``;
-      document.querySelector(".cart-items-section").innerHTML=`<div class="receipt">
+      document.querySelector(".cart-items-section").innerHTML=`
+      <div class="billing-detail">Billing Details:</div>
+      <div class="receipt">
       <div class="top-section-receipt">
         <div class="img-tick-container">
           <img class="image-tick" src="./AlSadiq/tick.png">
