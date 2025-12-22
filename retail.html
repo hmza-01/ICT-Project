@@ -86,30 +86,72 @@
         </div>
     </section>
 <!-- Quote form-->
-      <section class="quote-form">
-        <div class="table-container">
-          <h2 class="section-title"></h2>
-          <div class="form-container">
-          <form id="retail-form">
-            <div class="form-row">
-            <div class="form-group">
-            <label for="name">Full Name*</label>
-            <input type="text" id="name" class="form-control" required></div>
-            <div class="form-group">                                          
-            <label for="company">Company Name*</label>                              
-            <input type="text" id="company" class="form-control" required></div> 
-           </div> 
-
-
-
-
-
-
-
-          </form>
-          
+<section class="quote-form">
+        <h2 class="section-title">Request a Wholesale Quote</h2>
+  <div class="parent-container">
+    <div class="form-container">
+            <form id="wholesale-form">
+      <div class="form-row">
+        <div class="form-group">
+         <label for="name">Full Name *</label> 
+         <input type="text" id="name" class="form-control" required>
         </div>
-      </section>
+              <div class="form-group">
+              <label for="company">Company Name</label>
+              <input type="text" id="company" class="form-control" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+         <label for="mail">Business Email *</label> 
+         <input type="text" id="mail" class="form-control" required>
+        </div>
+              <div class="form-group">
+              <label for="number">Phone No.</label>
+              <input type="text" id="number" class="form-control" required></div>
+      </div>
+      <div class="form-group">
+      <label for="business-type">Business Type *</label>
+              <select id="business-type" class="form-control" required>
+              <option value="">Select your Business Type</option>
+              <option value="manufacturer">Manufacturer</option>
+              <option value="retailer">Retailer</option>
+              <option value="hospitality">Hospitality</option>
+              <option value="exporter">Exporter</option>
+              <option value="distributor">Distributor</option>
+              <option value="other">Other(specify in remarks)</option>
+                </select>
+            </div>
+      <div class="form-group">
+      <label for="business-type">Products of Interest *</label>
+              <select id="business-type" class="form-control" required multiple>
+              <option value="jaggery">Pure Cane Jaggery</option>
+              <option value="bs">Brown-Sugar</option>
+              <option value="qand">Qand Crystals</option>
+              <option value="delicacies">Delicacies</option>
+                </select>
+                <br>
+              <small>Hold ctrl/cmd to select multiple products</small>
+            </div>
+      <div class="form-group">
+      <label for="monthly-requirement">Estimated Monthly Requirement *</label>
+              <select id="monthly-requirement" class="form-control" required>
+              <option value="">Select Monthly Quantity </option>
+              <option value="under-100">Under 100kg</option>
+              <option value="100-500">100-500kg</option>
+              <option value="500-1000">500kg-1000kg</option>
+              <option value="1000+">1000kg+</option>
+                </select>
+            </div>
+      <div class="form-group">
+            <label for="remarks">Tell us about your specific needs</label>
+              <textarea id="remarks" class="form-control" rows="5" cols="" placeholder="Enter your specific instructions or remarks for our team here."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.1rem;">Submit Quote Request</button>
+            </form>
+
+    </div>
+  </div>
+</section>
 </body>
 </html>
 
