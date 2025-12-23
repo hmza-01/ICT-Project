@@ -417,11 +417,89 @@
 
 
 
+<<<<<<< HEAD
     footer {
     background-color: var(--dark);
     color: white;
     padding: 60px 0 20px;
     }
+=======
+ footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .footer-links h4 {
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        .project-disclaimer {
+            font-style: italic;
+            margin-top: 10px;
+            color: #bbb;
+        }
+        /*Homepage waley Paragraphs*/
+.bodier {
+  padding: 80px 0;
+  text-align: center;
+  background-color: black ;
+
+}
+.perk1title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary);
+  font-size: 2.2rem;
+}
+.perk2title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary);
+  font-size: 2.2rem;
+}
+>>>>>>> 90c399b5604ea8a5ca995e2d135b962045a44fa5
 
     .footer-content {
     display: grid;
