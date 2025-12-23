@@ -123,11 +123,11 @@
             </div>
       <div class="form-group">
       <label for="business-type">Products of Interest *</label>
-              <select id="business-type" class="form-control" required multiple>
-              <option value="jaggery">Pure Cane Jaggery</option>
-              <option value="bs">Brown-Sugar</option>
-              <option value="qand">Qand Crystals</option>
-              <option value="delicacies">Delicacies</option>
+              <select id="business-type" class="form-control product-name-form" required multiple>
+              <option value="Pure Cane Jaggery">Pure Cane Jaggery</option>
+              <option value="Brown-Sugar">Brown-Sugar</option>
+              <option value="Qand Crystals">Qand Crystals</option>
+              <option value="Delicacies">Delicacies</option>
                 </select>
                 <br>
               <small>Hold ctrl/cmd to select multiple products</small>
@@ -136,10 +136,10 @@
       <label for="monthly-requirement">Estimated Monthly Requirement *</label>
               <select id="monthly-requirement" class="form-control" required>
               <option value="">Select Monthly Quantity </option>
-              <option value="under-100">Under 100kg</option>
-              <option value="100-500">100-500kg</option>
-              <option value="500-1000">500kg-1000kg</option>
-              <option value="1000+">1000kg+</option>
+              <option value="95">Under 100kg</option>
+              <option value="495">100-500kg</option>
+              <option value="995">500kg-1000kg</option>
+              <option value="1010">1000kg+</option>
                 </select>
             </div>
       <div class="form-group">
@@ -149,6 +149,14 @@
             <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.1rem;">Submit Quote Request</button>
             </form>
 
+    </div>
+  </div>
+  <div class="toast">
+    <div class="tick-container">
+      <img class="tick-img" src="./AlSadiq/tick.png">
+    </div>
+    <div class="tick-text">
+       Product added successfully...
     </div>
   </div>
 </section>
@@ -185,7 +193,7 @@
         </div>
 </footer>
 
-
+<script type="module" src="./retail.js"></script>
 </body>
 </html>
 
