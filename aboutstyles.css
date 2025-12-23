@@ -151,7 +151,7 @@ nav img{
     position:relative;
 }
 .nav-links ul li a{
-    color: aliceblue;
+    color: var(--light);
     text-decoration: none;
     font-size: 13px;
 }
@@ -159,7 +159,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background-color: #f44336;
+    background-color: var(--secondary);
     display: block;
     margin: auto;
     transition:0.5s;
