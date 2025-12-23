@@ -417,13 +417,11 @@
 
 
 
-<<<<<<< HEAD
     footer {
     background-color: var(--dark);
     color: white;
     padding: 60px 0 20px;
     }
-=======
  footer {
             background-color: var(--dark);
             color: white;
@@ -499,8 +497,6 @@
   color: var(--primary);
   font-size: 2.2rem;
 }
->>>>>>> 90c399b5604ea8a5ca995e2d135b962045a44fa5
-
     .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
