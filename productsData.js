@@ -1,7 +1,7 @@
 export let products=[
   {
   price:12,
-  id:"qwertyui123",
+  id:"1766490831329",
   quantity:1,
   name:"Pure Cane Jaggery",
   url:"./AlSadiq/gurr.jpg",
@@ -9,57 +9,25 @@ export let products=[
 },
 {
   price:12,
-  id:"qwertyui124",
+  id:"1766490831330",
   quantity:1,
-  name:"Pure Cane Jaggery 0",
+  name:"Brown-Sugar",
   url:"./AlSadiq/gurr.jpg",
   description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
 },
 {
   price:12,
-  id:"qwertyui125",
+  id:"1766490831331",
   quantity:1,
-  name:"Pure Cane Jaggery 1",
+  name:"Qand Crystals",
   url:"./AlSadiq/gurr.jpg",
   description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
 },
 {
   price:12,
-  id:"qwertyui126",
+  id:"1766490831332",
   quantity:1,
-  name:"Pure Cane Jaggery 2",
-  url:"./AlSadiq/gurr.jpg",
-  description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
-},
-{
-  price:12,
-  id:"qwertyui127",
-  quantity:1,
-  name:"Pure Cane Jaggery 3",
-  url:"./AlSadiq/gurr.jpg",
-  description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
-},
-{
-  price:12,
-  id:"qwertyui128",
-  quantity:1,
-  name:"Pure Cane Jaggery 4",
-  url:"./AlSadiq/gurr.jpg",
-  description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
-},
-{
-  price:12,
-  id:"qwertyui129",
-  quantity:1,
-  name:"Pure Cane Jaggery 5",
-  url:"./AlSadiq/gurr.jpg",
-  description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
-},
-{
-  price:12,
-  id:"qwertyui130",
-  quantity:1,
-  name:"Pure Cane Jaggery 6",
+  name:"Delicacies",
   url:"./AlSadiq/gurr.jpg",
   description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
 },
