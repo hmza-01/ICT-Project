@@ -477,7 +477,8 @@ width: 100%;
 .bodier {
   padding: 80px 0;
   text-align: center;
-  animation: animationMove 2500ms ease-in-out forwards;
+  background-color: black ;
+
 }
 .perk1title {
   text-align: center;
