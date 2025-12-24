@@ -23,7 +23,7 @@ function animation(el,timeout){
     window.location.href="./checkout.html";
   },3000)
 }
-document.querySelector(".btn-primary").addEventListener("click",(e)=>{
+document.querySelector(".btn-primary-js").addEventListener("click",(e)=>{
   e.preventDefault();
   const data=getDetails();
    let matchedProducts=products.filter(el=>{
@@ -55,4 +55,5 @@ document.querySelector(".btn-primary").addEventListener("click",(e)=>{
   animation(document.querySelector(".toast"),timeout);
   cart.toStorage();
 })
+
 

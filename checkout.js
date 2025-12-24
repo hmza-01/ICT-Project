@@ -95,7 +95,7 @@ function eventDelegator(){
         cart.deleteItem(itemid);
         cartSummary();
         data=moneyCalc();
-        time=setTimeout(()=>{
+        setTimeout(()=>{
           document.querySelector(".toast").classList.remove("visible")
         },3000);
 
