@@ -869,3 +869,54 @@ color: white;
     .toast.visible{
     visibility: visible;
     }
+    .delete-btn{
+        padding:7px 0;
+        text-align: center;
+        width:50%;
+        background-color: rgb(196, 23, 23);
+        color:white;
+        font-size: 16px;
+        border:none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: background-color 1200ms;
+      }
+      .delete-btn:hover{
+        background-color:rgb(0, 0, 0);
+        cursor: pointer;
+      }
+      .toast{
+        z-index: 10;
+        display: flex;
+        width:310px;
+        height:47px;
+        background-color:rgb(158, 20, 20);
+        justify-content: center;
+        align-items: center;
+        column-gap: 12px;
+        border-radius: 5px;
+        visibility: hidden;
+        position: fixed;
+        bottom: 20px;
+        left:40%;
+      }
+      .tick-container{
+        width:27px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .tick-img{
+        width: 100%;
+        border-radius:100%;
+      }
+      .tick-text{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:16px;
+        font-weight:bold;
+        color:white;
+      }
+      .toast.visible{
+      visibility: visible;
+      }

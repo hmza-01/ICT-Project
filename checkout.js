@@ -5,17 +5,18 @@ if(cart.cartItems.length>0){
 cart.cartItems.forEach((el)=> {
   accumulator+=`
     <div class="product-card">
-    <div class="product-img">
-    <img class="img" src="./AlSadiq/gurr.jpg">
-    </div>
-    <div class="product-info">
-    <h3>${el.name}</h3>
-    <p>${el.description}</p>
-    <div class="product-price">
-    <div class="product-cash">$${el.price}</div>
-    <div class="cart-btn">Quantity:${el.quantity}</div>
-    </div>
-    </div>
+      <div class="product-img">
+        <img class="img" src="./AlSadiq/gurr.jpg">
+      </div>
+      <div class="product-info">
+        <h3>${el.name}</h3>
+        <p>${el.description}</p>
+        <div class="product-price">
+        <div class="product-cash">$${el.price}</div>
+        <div class="cart-btn">Quantity:${el.quantity}</div>
+        <div class="delete-btn" data-product-id=${el.id}>Delete...</div>
+      </div>
+      </div>
     </div>`
 })
 document.querySelector(".cart-items-container").innerHTML=accumulator;
@@ -86,6 +87,18 @@ function eventDelegator(){
     }
     if(el.target.classList.contains("btn-close")){
       window.location.href="./product.html"
+    }
+    if(el.target.classList.contains("delete-btn")){
+        document.querySelector(".toast").classList.add("visible")
+        const itemid=el.target.dataset.productId;
+        console.log(itemid);
+        cart.deleteItem(itemid);
+        cartSummary();
+        data=moneyCalc();
+        time=setTimeout(()=>{
+          document.querySelector(".toast").classList.remove("visible")
+        },3000);
+
     }
   })
 }

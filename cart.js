@@ -32,17 +32,16 @@ AddtoCart(productId,quantity){
 loadfromStorage(){
   this.cartItems=JSON.parse(localStorage.getItem(this.Storagekey))||[];
 }
-//temporarily commented
-// deleteItem(productId){
-//   let newArray=[];
-//   this.cartItems.forEach((cartItem)=>{
-//     if(cartItem.id!==productId){
-//       newArray.push(cartItem);
-//     }
-//   })
-//   this.cartItems=newArray;
-//   this.toStorage();
-// }
+deleteItem(productId){
+  let newArray=[];
+  this.cartItems.forEach((cartItem)=>{
+    if(cartItem.id!==productId){
+      newArray.push(cartItem);
+    }
+  })
+  this.cartItems=newArray;
+  this.toStorage();
+}
 toStorage(){
   localStorage.setItem(this.Storagekey,JSON.stringify(this.cartItems));
 }
