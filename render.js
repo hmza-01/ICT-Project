@@ -8,8 +8,10 @@ function display(){
         <img class="img" src=${el.url}>
     </div>
     <div class="product-info">
+      <div class="name-desc">
         <h3>${el.name}</h3>
         <p>${el.description}</p>
+        </div>
         <div class="product-price">
             <div class="product-cash">$${el.price}</div>
             <button class="cart-btn" data-product-id=${el.id}>Add to Cart</button>
