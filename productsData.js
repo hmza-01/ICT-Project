@@ -12,16 +12,16 @@ export let products=[
   id:"1766490831330",
   quantity:1,
   name:"Brown-Sugar",
-  url:"./AlSadiq/gurr.jpg",
-  description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
+  url:"./AlSadiq/shakkar.png",
+  description:"Soft, moist sugar perfect for baking and beverages."
 },
 {
   price:12,
   id:"1766490831331",
   quantity:1,
   name:"Qand Crystals",
-  url:"./AlSadiq/gurr.jpg",
-  description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
+  url:"./AlSadiq/qand2.png",
+  description:"Delicate crystalline brown sugar with rich molasses flavor, perfect for every occasion!"
 },
 {
   price:12,
