@@ -350,5 +350,18 @@
       visibility: visible;
       }
 
- 
+/*FeedBack Form*/ 
+.form-successfull
+{
+  background-color: var(--light);
+  height:43.35vh; 
+}
+.form-message
+{
+  width: 50%;
+  color: var(--primary);
+  text-align: center;
+  margin-left: 25%;
+  paddint-top: 25px;
 
+}
