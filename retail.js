@@ -20,7 +20,7 @@ function animation(el,timeout){
   el.classList.add("visible");
   timeout=setTimeout(()=>{
     el.classList.remove("visible");
-    window.location.href="./retail.html";
+    window.location.href="./feedback-response.html";
   },3000)
 }
 document.querySelector(".btn-primary-js").addEventListener("click",(e)=>{
