@@ -885,7 +885,7 @@ color: white;
         background-color:rgb(0, 0, 0);
         cursor: pointer;
       }
-      .toast{
+      .toast-1{
         z-index: 10;
         display: flex;
         width:310px;
@@ -916,6 +916,6 @@ color: white;
         font-weight:bold;
         color:white;
       }
-      .toast.visible{
+      .toast-1.visible{
       visibility: visible;
       }

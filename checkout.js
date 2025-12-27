@@ -89,14 +89,14 @@ function eventDelegator(){
       window.location.href="./product.html"
     }
     if(el.target.classList.contains("delete-btn")){
-        document.querySelector(".toast").classList.add("visible")
+        document.querySelector(".toast-1").classList.add("visible")
         const itemid=el.target.dataset.productId;
         console.log(itemid);
         cart.deleteItem(itemid);
         cartSummary();
         data=moneyCalc();
         setTimeout(()=>{
-          document.querySelector(".toast").classList.remove("visible")
+          document.querySelector(".toast-1").classList.remove("visible")
         },3000);
 
     }

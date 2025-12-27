@@ -26,34 +26,34 @@ function animation(el,timeout){
 document.querySelector(".btn-primary-js").addEventListener("click",(e)=>{
   e.preventDefault();
   const data=getDetails();
-   let matchedProducts=products.filter(el=>{
-    const match=data.productName.filter((e)=>{
-      const elName=el.name.toLowerCase().trim();
-      const eName=e.toLowerCase().trim();
-      if(elName===(eName)){
-       return true;
-      }
-    })
-    return match.length>0;
-  })
-  matchedProducts.forEach((element)=>{
-    element.quantity=data.requirement||1;
-    let matchingItem;
-    cart.cartItems.forEach((el)=>{
-      if(el.id===element.id){
-        matchingItem=el;
-      }
-    })
-    if(matchingItem){
-      matchingItem.quantity+=data.requirement;
-    }
-    else{
-      cart.cartItems.push(element);
-    }
-  })
+  //  let matchedProducts=products.filter(el=>{
+  //   const match=data.productName.filter((e)=>{
+  //     const elName=el.name.toLowerCase().trim();
+  //     const eName=e.toLowerCase().trim();
+  //     if(elName===(eName)){
+  //      return true;
+  //     }
+  //   })
+  //   return match.length>0;
+  // })
+  // matchedProducts.forEach((element)=>{
+  //   element.quantity=data.requirement||1;
+  //   let matchingItem;
+  //   cart.cartItems.forEach((el)=>{
+  //     if(el.id===element.id){
+  //       matchingItem=el;
+  //     }
+  //   })
+  //   if(matchingItem){
+  //     matchingItem.quantity+=data.requirement;
+  //   }
+  //   else{
+  //     cart.cartItems.push(element);
+  //   }
+  // })
   let timeout;
   animation(document.querySelector(".toast"),timeout);
-  cart.toStorage();
+  // cart.toStorage();
 })
 
 
