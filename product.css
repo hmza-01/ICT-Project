@@ -81,7 +81,7 @@ body {
 }
 
 .product-img {
-    flex:1;
+    height:180px;
     overflow: hidden;
 }
 .img{
@@ -309,7 +309,7 @@ footer {
   visibility: visible;
   }
 .name-desc{
-    min-height: 115px;
+    min-height:115px;
     max-height: 125px;
     overflow: hidden;
 }

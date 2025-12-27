@@ -1,5 +1,6 @@
 export let products=[
   {
+  Sr:0,
   price:12,
   id:"1766490831329",
   quantity:1,
@@ -7,7 +8,8 @@ export let products=[
   url:"./AlSadiq/gurr2.png",
   description:"Rich, caramel notes with natural minerals. Unrefined and traditionally prepared."
 },
-{
+{ 
+  Sr:1,
   price:12,
   id:"1766490831330",
   quantity:1,
@@ -16,6 +18,7 @@ export let products=[
   description:"Soft, moist sugar perfect for baking and beverages."
 },
 {
+  Sr:2,
   price:12,
   id:"1766490831331",
   quantity:1,
@@ -24,6 +27,7 @@ export let products=[
   description:"Delicate crystalline brown sugar with rich molasses flavor, perfect for every occasion!"
 },
 {
+  Sr:3,
   price:12,
   id:"1766490831332",
   quantity:1,
