@@ -53,7 +53,7 @@ function descriptionRenderer(){
             <div class="pricing-options">
                 <div class="price-box">
                     <h3>Retail Purchase</h3>
-                    <div class="price-amount">$${matchingItem.price}/kg</div>
+                    <div class="price-amount">Rs.${matchingItem.price}/kg</div>
                     <button class="cart-addition btn btn-primary" style="width: 100%; margin-bottom: 10px;">
                         <i class="fas fa-shopping-cart"></i> Add to Cart
                     </button>

@@ -13,7 +13,7 @@ function display(){
         <p>${el.description}</p>
         </div>
         <div class="product-price">
-            <div class="product-cash">$${el.price}</div>
+            <div class="product-cash">Rs.${el.price}</div>
             <div>
             <button class="cart-btn" data-product-id=${el.id}>Add to Cart</button>
             <button class="detail-btn" data-product-id=${el.id}>Show Details</button>

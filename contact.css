@@ -20,7 +20,9 @@
 }
 .contacts-grid {
 display: grid;
+grid-template-columns: 1fr 1fr;
 gap:50px;
+
 }
 
 .contacts-card {
@@ -42,4 +44,6 @@ transition: transform 0.3s;
         padding: 0 20px;
 }
 
-
+.contacts-card p  {
+padding: 20px 0px 10px 0;
+}
