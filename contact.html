@@ -116,6 +116,15 @@
             </div>
         </div>
 </footer>
-
+<script>
+  document.querySelector(".btn-primary").addEventListener("click",(e)=>{
+    e.preventDefault();
+    document.querySelector(".toast").classList.add("visible");
+    setTimeout(()=>{
+      document.querySelector(".toast").classList.remove("visible");
+      window.location.href="./contact.html"
+    },3000)
+  })
+</script>
 </body>
 </html>

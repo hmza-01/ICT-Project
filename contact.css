@@ -30,13 +30,13 @@ background: var(--primary);
 padding: 30px;
 border-radius: 8px;
 text-align: center;
-box-shadow 0 5px 15px rgba(0,0,0,0.05);
+box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 transition: transform 0.3s;
 }
 .contacts-card:hover  {
  transform: translateY(-10px); 
 }
-/* container class ka duplicate add kia */,
+/* container class ka duplicate add kia */
 .behenchod {
         width: 100%;
         max-width: 1200px;
