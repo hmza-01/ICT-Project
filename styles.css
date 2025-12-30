@@ -1,11 +1,15 @@
     :root {
     --primary: #8B4513; /*Dark brown */
+    --light-gray: #F5F5F5;
+    --primary-light: #D2691E;
     --secondary: #D2691E; /* Chocolate */
     --accent: #FFD700; /* golden */
     --light: #FFF8DC;
     --dark: #5D2906;
     --gray: #333;
     --light-gray: #f5f5f5;
+
+    --cream: #FEF9E7;
     }
     *{
 
@@ -290,8 +294,8 @@ color: white;
     .header-1{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('AlSadiq/back.jpg');
     background-position: center;
+    background-color: var(--light-gray);
     background-size: cover;
     position: relative;
     }
@@ -919,3 +923,12 @@ color: white;
       .toast-1.visible{
       visibility: visible;
       }
+.header-2{
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-color: var(--cream);
+    background-size: cover;
+    position: relative;
+    }
+
