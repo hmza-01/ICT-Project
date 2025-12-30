@@ -6,7 +6,7 @@ cart.cartItems.forEach((el)=> {
   accumulator+=`
     <div class="product-card">
       <div class="product-img">
-        <img class="img" src="./AlSadiq/gurr.jpg">
+        <img class="img" src="${el.url}">
       </div>
       <div class="product-info">
         <h3>${el.name}</h3>

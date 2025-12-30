@@ -126,13 +126,14 @@
 }
 
 .product-img {
-    flex:1;
+    height:180px;
     overflow: hidden;
     width:100%;
 }
 .img{
-    object-fit: contain;
-    width:100%
+    object-fit: cover;
+    width:100%;
+    height:100%;
 }
 .product-info {
     flex:1;
