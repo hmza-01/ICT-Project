@@ -1,3 +1,17 @@
+:root {
+    --primary: #8B4513; 
+    --secondary: #D2691E; 
+    --accent: #FFD700; 
+    --light: #FFF8DC; 
+    --dark: #5D2906;
+    --gray: #333;
+    --light-gray: #f5f5f5;
+    --reddish: #f44236;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --cream: #FEF9E7;
+
+}
 
 .checkout-section {
     padding: 80px 0;
@@ -112,17 +126,19 @@
     color:var(--primary);
 }
 .product-card {
-    height:340px;
-    min-width:250px;
+    height:400px;
     border: 1px solid #eee;
     border-radius: 8px;
     overflow: hidden;
-    transition: box-shadow 0.3s;
     display:flex;
+    background-color: var(--light-gray);
+    box-shadow: var(--shadow);
+    transition: var(--transition); 
     flex-direction: column;
 }
 .product-card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
 }
 
 .product-img {
