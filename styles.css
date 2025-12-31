@@ -75,6 +75,7 @@
     }
     .text-box{
     width:90%;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--light);
     position:absolute;
     top:50%;
@@ -766,12 +767,16 @@ color: white;
     }
 
     .kahani {
+
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 1.5rem;
+    font-style: italic;
     color: var(--secondary);
     padding-bottom: 20px;
     }
     .subheading {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     padding: 20px 0 20px 80px;
     color: var(--secondary);
@@ -928,4 +933,3 @@ color: white;
     background-size: cover;
     position: relative;
     }
-

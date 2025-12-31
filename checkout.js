@@ -12,7 +12,7 @@ cart.cartItems.forEach((el)=> {
         <h3>${el.name}</h3>
         <p>${el.description}</p>
         <div class="product-price">
-        <div class="product-cash">$${el.price}</div>
+        <div class="product-cash">Rs.${el.price}/-</div>
         <div class="cart-btn">Quantity:${el.quantity}</div>
         <div class="delete-btn" data-product-id=${el.id}>Delete...</div>
       </div>
@@ -37,16 +37,16 @@ cart.cartItems.forEach((el)=>{
   totalPrice+=el.price*el.quantity;
   quantity+=el.quantity;
 })
-document.querySelector("#subtotal").innerHTML=`$${totalPrice.toFixed(2)}`
+document.querySelector("#subtotal").innerHTML=`Rs.${totalPrice.toFixed(2)}`
 let tax=0.05*totalPrice;
-document.querySelector("#tax").innerHTML=`$${tax.toFixed(2)}`
+document.querySelector("#tax").innerHTML=`Rs.${tax.toFixed(2)}`
 let finalprice=totalPrice+tax;
 if(!cart.cartItems.length){
-  document.querySelector("#total").innerHTML=`$${finalprice.toFixed(2)}`
+  document.querySelector("#total").innerHTML=`Rs.${finalprice.toFixed(2)}`
 }
 else{
   finalprice+=5;
-  document.querySelector("#total").innerHTML=`$${finalprice.toFixed(2)}`
+  document.querySelector("#total").innerHTML=`Rs.${finalprice.toFixed(2)}`
 }
 return {totalPrice,tax,finalprice,quantity};
 }
@@ -68,10 +68,10 @@ function eventDelegator(){
         <div class="txt-receipt">Order Summary</div>
       </div>
       <div class="middle-section-receipt">
-        <div class="pr">Price:$${data.totalPrice.toFixed(2)}</div>
-        <div class="pr">Tax:$${data.tax.toFixed(2)}</div>
-        <div class="pr ship">Shipping:$5.00</div>
-        <div class="fpr">Total:$${data.finalprice.toFixed(2)}</div>
+        <div class="pr">Price:Rs.${data.totalPrice.toFixed(2)}</div>
+        <div class="pr">Tax:Rs.${data.tax.toFixed(2)}</div>
+        <div class="pr ship">Shipping:$150.00</div>
+        <div class="fpr">Total:Rs.${data.finalprice.toFixed(2)}</div>
         <div class="pr">Total Items:${data.quantity}</div>
         <div class="pr ship">Dispatched By: AlSadiq Co.&copy;</div>
         <div class="fpr">Dispatch Id:${Date.now()}</div>
