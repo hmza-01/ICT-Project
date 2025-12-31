@@ -1,4 +1,4 @@
-# AlSadiq Qand & Jaggery - Digital Platform for Heritage Sweeteners
+# AlSadiq Natural Sweeteners - Digital Platform for Heritage Sweeteners
 
 ![AlSadiq Banner](./Header.png)
 
@@ -6,7 +6,7 @@ A specialized B2B/B2C hybrid web platform for traditional Pakistani sweeteners, 
 
 ## 🏢 Project Overview
 
-**AlSadiq Qand & Jaggery** is a digital platform that revolutionizes the distribution of traditional Pakistani sweeteners. The project serves as both a B2B wholesale portal for food businesses and a B2C retail showcase for consumers interested in authentic, heritage sweeteners.
+**Al-Sadiq Natural Sweeteners** is a digital platform that revolutionizes the distribution of traditional Pakistani sweeteners. The project serves as both a B2B wholesale portal for food businesses and a B2C retail showcase for consumers interested in authentic, heritage sweeteners.
 
 ### 🎯 Key Features
 
