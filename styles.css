@@ -9,6 +9,7 @@
     --gray: #333;
     --light-gray: #f5f5f5;
 
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --cream: #FEF9E7;
     }
     *{
@@ -101,6 +102,7 @@
 }
 .perks{
     margin: 20px 40px 20px 40px;
+    padding-top:10px;
     width:auto;
     position:static;
     top:50%;
@@ -110,16 +112,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    background-color: white;
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition); 
 }
 .perks:hover  {
-  transform: translateY(-4px);
-  transition: 1.0s;
+  transform: translateY(-10px);
 }
 .homepage-paragraph {
   padding: 0px 140px 20px 140px;
   color: var(--dark);
-  padding-bottom:20px;
+  padding-bottom:30px;
 }
 .perks h1{
     font-size:30px;
@@ -529,18 +532,12 @@ color: white;
   align-items: center;
   padding: 80px 0;
   text-align: center;
-  background-color: var(--light-gray);
+  background-color: var(--cream);
 
 }
-.perk1title {
+.perktitle {
   text-align: center;
-  margin-bottom: 50px;
-  color: var(--dark);
-  font-size: 2.2rem;
-}
-.perk2title {
-  text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: var(--dark);
   font-size: 2.2rem;
 }
@@ -552,7 +549,7 @@ color: white;
     }
 
     .footer-logo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 15px;
     color: white;

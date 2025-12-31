@@ -20,7 +20,7 @@ function descriptionRenderer(){
 
     <!-- Product Info -->
     <div class="product-info">
-        <h1>${matchingItem.name}</h1>
+        <h2 class="section-title">${matchingItem.name}</h1>
         
         <div class="product-rating">
             <div class="stars">
@@ -57,6 +57,11 @@ function descriptionRenderer(){
                     <button class="cart-addition btn btn-primary" style="width: 100%; margin-bottom: 10px;">
                         <i class="fas fa-shopping-cart"></i> Add to Cart
                     </button>
+                    <a href="checkout.html">
+                    <button class=" btn btn-primary" style="width: 100%; margin-bottom: 10px;">
+                        <i class="fas fa-shopping-cart"></i> Proceed to Checkout 
+                    </button> </a>
+
                     <p class="price-note">Free shipping on orders above $50</p>
                 </div>
                 <div class="price-box">

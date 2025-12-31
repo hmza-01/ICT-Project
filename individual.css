@@ -7,6 +7,7 @@
      --dark: #5D2906;
      --gray: #333;
      --light-gray: #f5f5f5;
+    --cream: #FEF9E7;
  }
  
  * {
@@ -65,7 +66,7 @@
  /* Header */
     .topbar {
     max-height: 13vh;
-    background-color: var(--primary);
+    background-color: var(--cream);
     background-position: center;
     background-size: cover;
     opacity:1;
