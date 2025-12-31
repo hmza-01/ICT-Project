@@ -45,7 +45,7 @@ if(!cart.cartItems.length){
   document.querySelector("#total").innerHTML=`Rs.${finalprice.toFixed(2)}`
 }
 else{
-  finalprice+=5;
+  finalprice+=150;
   document.querySelector("#total").innerHTML=`Rs.${finalprice.toFixed(2)}`
 }
 return {totalPrice,tax,finalprice,quantity};
@@ -70,7 +70,7 @@ function eventDelegator(){
       <div class="middle-section-receipt">
         <div class="pr">Price:Rs.${data.totalPrice.toFixed(2)}</div>
         <div class="pr">Tax:Rs.${data.tax.toFixed(2)}</div>
-        <div class="pr ship">Shipping:$150.00</div>
+        <div class="pr ship">Shipping:Rs.150.00</div>
         <div class="fpr">Total:Rs.${data.finalprice.toFixed(2)}</div>
         <div class="pr">Total Items:${data.quantity}</div>
         <div class="pr ship">Dispatched By: AlSadiq Co.&copy;</div>
