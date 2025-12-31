@@ -23,7 +23,13 @@ function descriptionRenderer(){
   }
 })
    document.querySelector(".products-grid").innerHTML=RandomAccumulator;
+   document.querySelectorAll(".view-btn").forEach((e)=>{
+        e.addEventListener("click",(el)=>{
+        const productId=el.target.dataset.productId;
+        localStorage.setItem("descriptionId",JSON.stringify(productId));
+        window.location.href="./individual.html";
+   })
+  })
   }
-
 
 descriptionRenderer();
