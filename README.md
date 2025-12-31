@@ -1,6 +1,6 @@
 # AlSadiq Qand & Jaggery - Digital Platform for Heritage Sweeteners
 
-![AlSadiq Banner](./AlSadiq/logo.png)
+![AlSadiq Banner](./Header.png)
 
 A specialized B2B/B2C hybrid web platform for traditional Pakistani sweeteners, connecting artisans with businesses while providing premium heritage products to consumers.
 
@@ -67,7 +67,7 @@ A specialized B2B/B2C hybrid web platform for traditional Pakistani sweeteners, 
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Edge)
-- Local server setup (XAMPP, Live Server, etc.)
+- Local server setup (Apache2, Live Server, etc.)
 - Basic understanding of HTML, CSS, JavaScript
 
 ### Installation & Setup
@@ -84,10 +84,11 @@ A specialized B2B/B2C hybrid web platform for traditional Pakistani sweeteners, 
 
 3. **Set up local server**
    - Option A: Using VS Code Live Server extension
-   - Option B: Using XAMPP/WAMP (place in htdocs/www folder)
-   - Option C: Using Python simple server:
+   - Option B: Using Dockerised Apache2  server **Recommended**:
      ```bash
-     python -m http.server 8000
+     #initiate an Apache2 Docker container with the root directory of project as /var/www/html/  and run:
+     docker start <container_name>
+
      ```
 
 4. **Access the website**
@@ -157,7 +158,7 @@ A specialized B2B/B2C hybrid web platform for traditional Pakistani sweeteners, 
 
 ## 🔧 Development Features
 
-### Product Data Management
+### *Dynamic*Product Data Management
 - Centralized product data in `productsData.js`
 - Easy product additions/modifications
 - Consistent data structure across pages
@@ -168,11 +169,6 @@ A specialized B2B/B2C hybrid web platform for traditional Pakistani sweeteners, 
 - Cart total calculation
 - Cross-page cart synchronization
 
-### Responsive Design
-- Mobile-first approach
-- Flexible grid layouts
-- Adaptive typography
-- Touch-friendly interfaces
 
 ## 👥 Target Audience
 
@@ -192,8 +188,7 @@ A specialized B2B/B2C hybrid web platform for traditional Pakistani sweeteners, 
 ## 🎓 Academic Relevance
 
 This project demonstrates:
-- **Full-stack web development** concepts
-- **Responsive design** implementation
+- **HTML & CSS Basics for website Design**
 - **JavaScript DOM manipulation**
 - **Local storage** usage
 - **Form validation** techniques
@@ -232,7 +227,7 @@ This project demonstrates:
 ## 🔄 Project Status
 
 **Current Version**: 1.0.0  
-**Last Updated**: December 2024  
+**Last Updated**: December 2025  
 **Status**: Completed for academic submission
 
 ### Features Completed
@@ -245,15 +240,6 @@ This project demonstrates:
 - ✅ Form validation
 - ✅ Interactive UI elements
 
-### Future Enhancements (Potential)
-- Backend integration with database
-- User authentication system
-- Payment gateway integration
-- Order tracking system
-- Customer reviews and ratings
-- Admin dashboard
-- Multi-language support
-
 ## 📝 License
 
 This project was developed for academic purposes as part of the university coursework. All code and design are original work created for educational demonstration.
@@ -261,7 +247,7 @@ This project was developed for academic purposes as part of the university cours
 ## 🙏 Acknowledgments
 
 - Faculty guidance and support
-- Traditional sweetener artisans preserving heritage methods
+- Deepseek, for Grunt work
 - Open-source community for inspiration and resources
 - Team collaboration and peer learning
 
