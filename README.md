@@ -254,10 +254,10 @@ This project was developed for academic purposes as part of the university cours
 ## 📞 Contact
 
 For queries regarding this project:
-- **Course**: Web Technologies/ICT Project
-- **University**: [Your University Name]
-- **Semester**: Fall 2024
-- **Instructor**: [Instructor Name]
+- **Course**: Applications of Information and Communactions Technologies 
+- **University**: [University Of Punjab, FCIT]
+- **Semester**: Fall 2025
+- **Instructor**: [Dr. Madeeha Aman]
 
 ---
 
