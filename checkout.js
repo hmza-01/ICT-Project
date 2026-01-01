@@ -14,7 +14,7 @@ cart.cartItems.forEach((el)=> {
         <div class="product-price">
         <div class="product-cash">Rs.${el.price}/-</div>
         <div class="cart-btn">Quantity:${el.quantity}</div>
-        <div class="delete-btn" data-product-id=${el.id}>Delete...</div>
+        <div class="delete-btn" data-product-id=${el.id}>Remove from cart</div>
       </div>
       </div>
     </div>`
